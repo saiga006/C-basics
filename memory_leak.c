@@ -3,11 +3,11 @@
 #include<time.h>
 int cash=100;
 void Play(int bet)
-{ // char* C =(char *)malloc(sizeof(char)*10000);
-  char C[3]={'J','Q','K'};
-  // C[0]='J';
-  //C[1]='Q';
-  //C[2]='K';
+{  char* C =(char *)malloc(sizeof(char)*10000);
+  //char C[3]={'J','Q','K'};
+   C[0]='J';
+   C[1]='Q';
+   C[2]='K';
   printf("Shuffling ....");
   srand(time(NULL));
   int i;
@@ -31,9 +31,9 @@ void Play(int bet)
       cash-=bet;
       printf("you loose! Result=%c %c %c Total Cash =%d\n",C[0],C[1],C[2],cash);
     }
-    //free(C);
+
   }
-  
+   //   free(C);
   
 }
 
